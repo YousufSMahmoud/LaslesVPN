@@ -291,6 +291,7 @@ body {
   .started {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    align-items: center;
   }
 }
 
@@ -451,9 +452,17 @@ body {
 .started__icons-user,
 .started__icons-location,
 .started__icons-server {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   flex-shrink: 0;
+}
+@media (max-width: 61em) {
+  .started__icons-user,
+  .started__icons-location,
+  .started__icons-server {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
 }
 
 .started__number {
@@ -472,4 +481,227 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.875rem; /* 150% */
+}
+
+.features {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10.5rem;
+}
+@media (max-width: 61em) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.features__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+@media (max-width: 61em) {
+  .features__content {
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 61em) {
+  .features__pic {
+    grid-row: 1;
+  }
+}
+
+.features__pic__pic {
+  max-width: 100%;
+}
+
+.features__title {
+  color: #0b132a;
+  font-family: "Rubik";
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.125rem; /* 142.857% */
+}
+
+.features__p {
+  color: #4f5665;
+  font-family: "Rubik";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 187.5% */
+}
+@media (max-width: 61em) {
+  .features__p {
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+  }
+}
+
+.features__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 0.94rem;
+}
+@media (max-width: 61em) {
+  .features__lists {
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.features__list,
+.plan__list {
+  display: flex;
+  gap: 0.63rem;
+  color: #4f5665;
+  font-family: Rubik;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 214.286% */
+}
+@media (max-width: 61em) {
+  .features__list,
+  .plan__list {
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.plan__title-primary {
+  color: #0b132a;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.125rem; /* 142.857% */
+  margin-top: 11rem;
+}
+
+.plan__select-p {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.plan__title-secondary {
+  display: inline-block;
+  color: #0b132a;
+  text-align: center;
+  justify-content: center;
+  font-family: Rubik;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem; /* 166.667% */
+}
+
+.plan__p {
+  color: #4f5665;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 187.5% */
+}
+
+.plan__plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  margin-top: 3.75rem;
+  gap: 3.12rem;
+}
+@media (max-width: 61em) {
+  .plan__plans {
+    grid-template-columns: 1fr;
+  }
+}
+
+.plan__plan {
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  border: 2px solid #ddd;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.plan__lists {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 61em) {
+  .plan__lists {
+    align-items: start;
+  }
+}
+
+.plan__list {
+  display: flex;
+  gap: 0.63rem;
+  color: #4f5665;
+  font-family: Rubik;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 214.286% */
+}
+@media (max-width: 61em) {
+  .plan__list {
+    align-items: center;
+  }
+}
+
+.plan__list-icon {
+  margin-top: 4.98rem;
+}
+
+.plan__select {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.plan__button {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 11.11725rem;
+  height: 2.8125rem;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+  border: 2px solid #f53838;
+  text-decoration: none;
+  color: #f53838;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.plan__button-last {
+  border-radius: 3.125rem;
+  background: #f53838;
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
